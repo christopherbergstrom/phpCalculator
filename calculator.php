@@ -22,7 +22,25 @@
       $num1 = $_GET["num1"];
       $num2 = $_GET["num2"];
       $operator = $_GET["operator"];
+      switch ($operator) {
+        case '+': 
+          $answer = $num1 + $num2;
+          break;
+        case '-': 
+          $answer = $num1 - $num2;
+          break;
+        case '*': 
+          $answer = $num1 * $num2;
+          break;
+        case '/': 
+          $answer = $num1 / $num2;
+          break;
+        
+        default:
+          break;
+      }
     }
   ?>
+  <div>The answer is: <?= $answer ?></div>
 </body>
 </html>
