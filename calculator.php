@@ -8,13 +8,13 @@
 <body>
   <form action="">
     <input type="text" name="num1" placeholder="Number 1">
-    <input type="text" name="num2" placeholder="Number 2">
     <select name="operator">
       <option value="+">+</option>
       <option value="-">-</option>
       <option value="*">*</option>
       <option value="/">/</option>
     </select>
+    <input type="text" name="num2" placeholder="Number 2">
     <input type="submit" name="submit" value="Calculate">
   </form>
   <?php
